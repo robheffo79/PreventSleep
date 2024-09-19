@@ -5,6 +5,17 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Authors>Robert Heffernan</Authors>
+    <Description>PreventSleep is a simple C# tool that allows users to prevent their Windows system from sleeping for a specific duration or until a given time. This is especially useful when you need to keep your system awake for tasks like serving network traffic or remote desktop sessions.</Description>
+    <RepositoryUrl>https://github.com/robheffo79/PreventSleep.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/robheffo79/PreventSleep</PackageProjectUrl>
+    <Copyright>(C) 2024 Robert Heffernan</Copyright>
+    <Title>PreventSleep</Title>
+    <PackageId>au.heffernantech.preventsleep</PackageId>
+    <PackageIcon>Icon.png</PackageIcon>
+    <ApplicationIcon>PreventSleep.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -14,5 +25,20 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DebugType>embedded</DebugType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="PreventSleep.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
