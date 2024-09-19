@@ -6,12 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PreventSleep", "PreventSleep\PreventSleep.csproj", "{2CCECE8B-73C1-4E82-9DD2-FDFB897DB2C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{974AC3FD-94A1-44CC-902F-CB43C3E7EC71}"
-	ProjectSection(SolutionItems) = preProject
-		Icon.png = Icon.png
-		LICENSE.md = LICENSE.md
-		PreventSleep.ico = PreventSleep.ico
-		README.md = README.md
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
