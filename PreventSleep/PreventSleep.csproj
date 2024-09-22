@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <Authors>Robert Heffernan</Authors>
     <Description>PreventSleep is a simple C# tool that allows users to prevent their Windows system from sleeping for a specific duration or until a given time. This is especially useful when you need to keep your system awake for tasks like serving network traffic or remote desktop sessions.</Description>
     <RepositoryUrl>https://github.com/robheffo79/PreventSleep.git</RepositoryUrl>
@@ -40,6 +40,11 @@
       <PackagePath>\</PackagePath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StreamJsonRpc" Version="2.19.27" />
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
